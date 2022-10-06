@@ -35,23 +35,27 @@ export const Skills = () => {
                         <p>Here's a summary of my technical knowledge and expertise. I do have other skills, but these are my most advanced.<br></br> Please download my resume to view my other skills and experience!</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter3} alt="Image" />
                                 <h5>Web Development</h5>
                             </div>
                             <div className="item">
                                 <img src={meter2} alt="Image" />
+                                <h5>Full-Stack Development</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter3} alt="Image" />
                                 <h5>Testing Methodologies</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={meter1} alt="Image" />
                                 <h5>Development Tools and IDEs</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter2} alt="Image" />
                                 <h5>Debugging</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={meter1} alt="Image" />
                                 <h5>Documentation and Research</h5>
                             </div>
                             <div className="item">
