@@ -3,10 +3,10 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import navIcon1 from '../assets/images/nav-icon1.svg';
 import navIcon2 from '../assets/images/nav-icon2.svg';
 import navIcon3 from '../assets/images/nav-icon3.svg';
-//import { HashLink } from 'react-router-hash-link';
-// <HashLink to='#connect'>
-//<button className="vvd"><span>Let’s Connect</span></button>
-//</HashLink>
+import { HashLink } from 'react-router-hash-link';
+{/* <HashLink to='#connect'>
+<button className="vvd"><span>Let’s Connect</span></button>
+</HashLink> */}
 export const NavBar = () => {
 
   const [activeLink, setActiveLink] = useState('home');
@@ -49,7 +49,9 @@ export const NavBar = () => {
                 <a href="https://github.com/snquick" target="_blank"><img src={navIcon2} alt="github" /></a>
                 <a href="https://www.facebook.com/stephanie.quick.9/" target="_blank"><img src={navIcon3} alt="facebook" /></a>
               </div>
-                <button className="vvd" onClick={() => onUpdateActiveLink('connect')}><span>Let’s Connect</span></button>           
+              <HashLink to='#connect'>
+                <button className="vvd"><span>Let’s Connect</span></button>
+              </HashLink>          
   
             </span>
           </Navbar.Collapse>

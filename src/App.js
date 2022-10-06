@@ -7,10 +7,12 @@ import { Skills } from "./Components/Skills";
 import { Projects } from "./Components/Projects";
 import { Contact } from "./Components/Contact";
 import { Footer } from "./Components/Footer";
+import {BrowserRouter as Router} from 'react-router-dom';
 
 
 function App() {
   return (
+    <Router>
     <div className="App">
       <NavBar />
       <Banner />
@@ -20,6 +22,7 @@ function App() {
       <Footer />
 
     </div>
+    </Router>
   );
 }
 
