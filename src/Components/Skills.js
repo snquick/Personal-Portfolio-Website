@@ -1,6 +1,5 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-
 import meter1 from "../assets/images/meter1.svg";
 import meter2 from "../assets/images/meter2.svg";
 import meter3 from "../assets/images/meter3.svg";
@@ -33,7 +32,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>Here's a summary of my technical knowledge and expertise. I do have other skills, but these are my most advanced.<br></br> Please download my resume to view my other skills and experience!</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="Image" />
