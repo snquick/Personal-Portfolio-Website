@@ -56,7 +56,9 @@ a:hover {
 img {
   width: 100%;
   height: auto;
+  
 }
+
 
 button {
   border: 0;
@@ -284,6 +286,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
+  width: 80%;
+  margin-left: 60px;
+  margin-top: -50px;
+  margin-bottom: 25px;
 }
 @keyframes updown {
     0% {
@@ -418,7 +424,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 400px;
   height: 350px;
   overflow: hidden;
-
+  
   margin-bottom: 24px;
 }
 .proj-imgbx::before {
