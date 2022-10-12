@@ -4,7 +4,7 @@ import webprojImg1 from "../assets/images/studioghibliproject.jpg";
 import webprojImg2 from "../assets/images/bookstack.webp";
 import webprojImg3 from "../assets/images/worldmap.webp";
 
-import javaprojImg1 from "../assets/images/gamingcafeproject.png";
+import fullprojImg1 from "../assets/images/gamingcafeproject.png";
 import projImg5 from "../assets/images/project-img1.png";
 import projImg6 from "../assets/images/project-img1.png";
 
@@ -33,12 +33,12 @@ export const Projects = () => {
   ];
 
 
-  const javaProjects = [
+  const fullStackProjects = [
   
     {
       title: "Gaming Café Simulator",
       description: "Developed using Java and multiple design patterns to simulate a gaming cafe environment",
-      imgUrl: javaprojImg1,
+      imgUrl: fullprojImg1,
     },
   ];
   return (
@@ -57,10 +57,10 @@ export const Projects = () => {
                       <Nav.Link eventKey="first">Web Projects</Nav.Link> 
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">Java Programs</Nav.Link>
+                      <Nav.Link eventKey="second">Full-Stack Programs</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Future Projects</Nav.Link>
+                      <Nav.Link eventKey="third">Mobile Development</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -79,11 +79,10 @@ export const Projects = () => {
                       </Row>
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
-                      <p> My collection of Java projects</p>
                       <Row>
                         { 
                           
-                          javaProjects.map((project, index) => {
+                          fullStackProjects.map((project, index) => {
                             console.log(project);
                             return (
                               <ProjectCard
