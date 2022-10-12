@@ -1,8 +1,8 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import webprojImg1 from "../assets/images/studioghibliproject.jpg";
-import webprojImg2 from "../assets/images/shelvesproject.png";
-import webprojImg3 from "../assets/images/mapmaniagame.jpg";
+import webprojImg2 from "../assets/images/bookstack.webp";
+import webprojImg3 from "../assets/images/worldmap.webp";
 
 import javaprojImg1 from "../assets/images/gamingcafeproject.png";
 import projImg5 from "../assets/images/project-img1.png";
@@ -16,7 +16,7 @@ export const Projects = () => {
 
   const webProjects = [
     {
-      title: "Studio Ghibli Movies Database",
+      title: "Studio Ghibli Movie Database",
       description: "Using an API key to retrieve data from a web service",
       imgUrl: webprojImg1,
     },
@@ -50,7 +50,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Here is some sample projects that I have developed throughout the years. All of these programs can be found on my GitHub by clicking the image, or clicking the GitHub icon at the top of the page. This section will continously be updated with new projects so keep an eye out! <br></br>*Currently a work in progress*</p>
+                <p>Here are some sample projects that I have developed throughout the years. All of these programs can be found on my GitHub by clicking the image, or clicking the GitHub icon at the top of the page. This section will continously be updated with new projects so keep an eye out! <br></br>*Currently a work in progress*</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
