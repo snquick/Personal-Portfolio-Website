@@ -3,6 +3,8 @@ import { ProjectCard } from "./ProjectCard";
 import webprojImg1 from "../assets/images/studioghibliproject.jpg";
 import webprojImg2 from "../assets/images/bookstack.webp";
 import webprojImg3 from "../assets/images/worldmap.webp";
+import webprojImg4 from "../assets/images/webprojImg4.png";
+import webprojImg5 from "../assets/images/webprojImg5.jpg";
 
 import fullprojImg1 from "../assets/images/gamingcafeproject.png";
 import projImg5 from "../assets/images/project-img1.png";
@@ -30,7 +32,19 @@ export const Projects = () => {
       description: "Map Mania is a web application game that utilizes a Google Maps API key",
       imgUrl: webprojImg3,
     },
+    {
+      title: "Wordle Clone (React.js)",
+      description: "Recreating the popular web-based word game, Wordle, where you have to guess the daily five-letter word",
+      imgUrl: webprojImg4,
+    },
+
+    {
+      title: "Coco's Island Café & Grocery",
+      description: "Front-end responsive web application of a polynesian-themed grocery store and café, showcasing bootstrap and swiper.js",
+      imgUrl: webprojImg5,
+    },
   ];
+
 
 
   const fullStackProjects = [
