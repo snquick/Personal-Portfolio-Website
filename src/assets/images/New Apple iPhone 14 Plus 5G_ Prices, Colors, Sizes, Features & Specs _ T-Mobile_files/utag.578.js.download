@@ -1,0 +1,6 @@
+//tealium universal tag - utag.578 ut4.0.202205171931, Copyright 2022 Tealium.com Inc. All Rights Reserved.
+(function(u,a,b,c){u.map={};u.extend=[function(a,b){try{if(1){(function(c,serv,loc,w,conds){const config={url:"//{0}.pardot.com/pd.js"},logs=[];function conditionHandler(conditions,url){serv.bindConditions(conditions,function(condition){condition.vars.forEach(function(data){track(url,data);});},url);}
+function track(url,data){if(w.ta&&ta.donotsell){var n=ta.donotsell;if("function"==typeof n.isBlocked&&n.isBlocked(n.tags().pardot||"pardot"))return;}
+if(data){if(!data.subdomain||!data.name||!data.val){logs.push({error:{message:"Invalid",details:data,url:url||loc.href}});return;}
+data=c.object.merge(config,data);const _url=c.string.format(data.url,data.subdomain);w[data.name]=data.val;c.loader.script(_url,null,()=>logs.push({info:{details:{scriptUrl:_url,data:data},url:url||loc.href}}));}else{conditionHandler(conds,url);}}
+c.util.create("pardot",ta,{logs:logs,track:track});})(ta.core,ta.traffic.service,ta.core.url.location,window,(ta.pardot&&ta.pardot.conditions)||[]);}}catch(e){utag.DB(e)}}];for(c=0;c<u.extend.length;c++){try{d=u.extend[c](a,b);if(d==false)return}catch(e){}};})({});

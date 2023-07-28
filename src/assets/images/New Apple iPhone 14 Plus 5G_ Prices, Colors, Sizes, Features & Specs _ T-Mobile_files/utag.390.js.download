@@ -1,0 +1,5 @@
+//tealium universal tag - utag.390 ut4.0.202208301840, Copyright 2022 Tealium.com Inc. All Rights Reserved.
+(function(u,a,b,c){u.map={};u.extend=[function(a,b){try{if(1){(function(c,serv,convt,loc,conds){var cfg={data:{clientId:"7gdFVJf9",pixel:1,dmp:1,},url:"//c212.net/c/etag/?"},logs=[];function conditionHandler(conditions,url){serv.bindConditions(conditions,function(condition,e){condition.vars.forEach(function(v){track(url,v);});},url);}
+function track(url,data){if(window.ta&&ta.donotsell){var n=ta.donotsell;if("function"==typeof n.isBlocked&&n.isBlocked(n.tags().cision||"cision"))return;}
+if(data){data=c.object.merge(cfg.data,data);var _pixelUrl=cfg.url+convt.object.toQueryString(data);c.loader.image(_pixelUrl,null,function(){logs.push({info:{details:{pixelUrl:_pixelUrl,pageUrl:url||loc.href}}});});}else{conditionHandler(conds,url);}}
+c.util.create("cision",ta,{logs:logs,config:cfg,service:{conditionHandler:conditionHandler},track:track});})(ta.core,ta.traffic.service,ta.converter,ta.core.url.location,(ta.cision&&ta.cision.conditions)||[]);}}catch(e){utag.DB(e)}}];for(c=0;c<u.extend.length;c++){try{d=u.extend[c](a,b);if(d==false)return}catch(e){}};})({});

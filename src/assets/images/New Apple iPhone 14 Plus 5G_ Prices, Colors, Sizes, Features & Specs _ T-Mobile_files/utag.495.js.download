@@ -1,0 +1,8 @@
+//tealium universal tag - utag.495 ut4.0.202209022054, Copyright 2022 Tealium.com Inc. All Rights Reserved.
+(function(u,a,b,c){u.map={};u.extend=[function(a,b){try{if(1){(function(c,serv,conds,loc,w){var u=c.util,config={url:"//static.ads-twitter.com/uwt.js"},_loaded=0,_queue=[],logs=[];function conditionHandler(conditions,url){serv.bindConditions(conditions,function(condition){condition.vars.forEach(function(data){track(url,data);});},url);}
+function send(data,url){if(!w.twq||!w.twttr||!data||!data.action){logs.push({type:"error",data:data,details:{message:"invalid",twq:!!w.twq,twttr:!!w.twttr,config:config,url:url||loc.href}});return;}
+if(data.event&&data.details){w.twq(data.action,data.event,data.details);}else if(data.event){w.twq(data.action,data.event);}else{w.twttr.conversion.trackPid(data.action);}
+logs.push({type:"info",data:data,details:{url:url||loc.href}});}
+function track(url,data){if(w.ta&&ta.donotsell){var n=ta.donotsell;if("function"==typeof n.isBlocked&&n.isBlocked(n.tags().twitter||"twitter"))return;}
+if(w.twq&&_loaded){(data||conditionHandler(conds,url))&&send(data,url);}else if(w.twq){data&&_queue.push(data);}else{if(w.twq)return;var t;t=w.twq=function(){t.exe?t.exe.apply(t,arguments):t.queue.push(arguments);};t.version="1.1";t.queue=[];data&&_queue.push(data);c.loader.script(config.url,null,function(){_loaded=1;conditionHandler(conds,url);while(_queue.length){send(_queue.shift(),url);}});}}
+u.create("twitter",ta,{config:config,logs:logs,service:{conditionHandler:conditionHandler},track:track});})(ta.core,ta.traffic.service,(ta.twitter&&ta.twitter.conditions)||[],ta.core.url.location,window);}}catch(e){utag.DB(e)}}];for(c=0;c<u.extend.length;c++){try{d=u.extend[c](a,b);if(d==false)return}catch(e){}};})({});
